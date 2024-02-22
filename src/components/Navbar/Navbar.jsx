@@ -15,8 +15,8 @@ const Navbar = () => {
         <div className="brand-and-toggler flex flex-sb">
           <Link to="/" className="navbar-brand flex">
             <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMrf4xI-7Jy2uL4XtRmI-IJoVR4EzvLxjgcg&usqp=CAU"
-              alt="Loda"
+              src="https://s3.us-east-2.amazonaws.com/poetry-tpf-production/uploads/contentImages/_1200x630_crop_center-center_82_none/Harriet-Books-SEO.png?mtime=1619639579"
+              alt="books"
             />
             <p className="text-uppercase fw-7 fs-24 ls-1">B</p>
             <p>ook</p>
@@ -89,12 +89,6 @@ const Navbar = () => {
               </Link>
             </li> */}
             <li className="nav-item">
-              <Link
-                to="about"
-                className="nav-link text-uppercase text-white fs-22 fw-6 ls-1"
-              >
-                About
-              </Link>
               {/* <button className="nav-item text-uppercase">Login</button> */}
               <a href="/login">
                 <button className="nav-item text-uppercase">Login</button>

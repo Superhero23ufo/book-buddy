@@ -3,7 +3,7 @@ import "../Header/Header.css";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
-  const companyName = "iiitp civilised";
+  const companyName = "Behzad :)";
 
   return (
     <footer>

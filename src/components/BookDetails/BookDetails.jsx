@@ -6,7 +6,7 @@ import "./BookDetails.css";
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 
-const URL = "https://openlibrary.org/works/";
+const URL = "https://fsa-book-buddy-b6e748d1380d.herokuapp.com/api/books";
 
 const BookDetails = () => {
   const { id } = useParams();
@@ -18,7 +18,7 @@ const BookDetails = () => {
     setLoading(true);
     async function getBookDetails() {
       try {
-        const response = await fetch(`${URL}${id}.json`);
+        const response = await fetch(`${URL}.json`);
         const data = await response.json();
         // console.log(data);
 
@@ -104,33 +104,6 @@ const BookDetails = () => {
           <h2>Similar Books</h2>
         </div>
 
-        {/* <BookforSimilarList
-          key={1} // key
-          id={dataforSimilarBooks[0].new_id} // OL......W
-          bookISBN={dataforSimilarBooks[0].isbn} // ISBN number -> this is required for ML model
-          cover_img={dataforSimilarBooks[0].img_url}
-          title={dataforSimilarBooks[0].title} // Title without brackets
-          author={dataforSimilarBooks[0].bookAuthor} // Author
-          publisher={dataforSimilarBooks[0].publisher}
-        />
-        <BookforSimilarList
-          key={2} // key
-          id={dataforSimilarBooks[1].new_id} // OL......W
-          bookISBN={dataforSimilarBooks[1].isbn} // ISBN number -> this is required for ML model
-          cover_img={dataforSimilarBooks[1].img_url}
-          title={dataforSimilarBooks[1].title} // Title without brackets
-          author={dataforSimilarBooks[1].bookAuthor} // Author
-          publisher={dataforSimilarBooks[1].publisher}
-        />
-        <BookforSimilarList
-          key={3} // key
-          id={dataforSimilarBooks[2].new_id} // OL......W
-          bookISBN={dataforSimilarBooks[2].isbn} // ISBN number -> this is required for ML model
-          cover_img={dataforSimilarBooks[2].img_url}
-          title={dataforSimilarBooks[2].title} // Title without brackets
-          author={dataforSimilarBooks[2].bookAuthor} // Author
-          publisher={dataforSimilarBooks[2].publisher}
-        /> */}
       </div>
     </section>
   );

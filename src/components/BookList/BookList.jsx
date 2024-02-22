@@ -5,7 +5,7 @@ import Loading from "../Loader/Loader";
 // import coverImg from "../../images/cover_not_found.jpg";
 import "./BookList.css";
 // import { kitab } from "../../data/defaultData";
-import { kitab2 } from "../../data/newDefaultData";
+// import { kitab2 } from "../../data/newDefaultData";
   
 
 //https://covers.openlibrary.org/b/id/240727-S.jpg
@@ -37,7 +37,7 @@ const BookList = () => {
             return <Book key={index} {...item} />;
           })} */}
 
-          {kitab2.slice(0, 600).map((item, index) => {
+          {BookList.slice(0, 600).map((item, index) => {
             return (
               <Book
                 key={index} // key
